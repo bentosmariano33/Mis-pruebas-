@@ -1,41 +1,30 @@
-base = 8
-altura = 2
+# Escriba una función que reciba dos enteros como parámetro, y luego retorne el resultado de la suma.
+a = int(input("Ingrese un numero entero: "))
+b = int(input("Ingrese otro numero entero: "))
 
-def area_rectangulo(b, a):
-    resultado = 0
-    resultado = b*a
-    return resultado
+#Defino la nueva función
+def suma(a,b):
+    resultado = a + b
+    print(resultado)
 
-Z = area_rectangulo(base, altura)
+    
+x = suma(a,b) #Vinculo la función a una variable
 
-print(Z)  #imprimir con variable creada.
-print(area_rectangulo(base, altura)) #imprimir sin variable, llamando solo la función.
+print(x) #Llamo a la variable creada.
+
+# CONTINUACIÓN
+# Modifique la función para que en lugar de retornar el resultado, lo muestre en pantalla.
+
+# CONTINUACIÓN (2)
+# Pruebe invocar a la función utilizando dos valores leídos desde teclado.
 
 
-
-
-
-#Escriba una función que reciba dos enteros como parámetro, y luego retorne el resultado de la suma.
-#Intput = ent1, ent2 (int)
-#Output = suma (int)
-
-def resultado_suma(ent1, ent2):
-    suma = ent1 + ent2
-    return suma
-  
 
 #test
-def test_resultado_suma():
-    print("Testeando la suma...")
-    assert resultado_suma(2,2) == 4
-    assert resultado_suma(1,1) == 2
-    print("Testeado OK!")
+# def test_suma():
+#      print("Testeando la suma...")
+#      assert suma(2,2) == 4
+#      assert suma(1,1) == 2
+#      print("Testeado OK!")
 
-test_resultado_suma()
-
-
-#CONTINUACIÓN
-#Modifique la función para que en lugar de retornar el resultado, lo muestre en pantalla.
-
-#CONTINUACIÓN (2)
-#Pruebe invocar a la función utilizando dos valores leídos desde teclado
+# test_resultado_suma()
