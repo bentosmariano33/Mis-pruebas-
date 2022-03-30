@@ -47,6 +47,19 @@ def texto(nombre):
 print(texto("Emiliano"))
 
 
+# 7. Cree una función que reciba dos string como parámetro (nombre1 y nombre2), 
+# y retorne True si nombre1 tiene más letras que nombre2, o False en caso contrario.
+
+
+def nombres(nombre1, nombre2):
+    """Nos muestra la verdad de que nombre1 es mas largo que nombre2"""
+    comparar_letras = len(nombre1) > len(nombre2) #Compara si el nombre1 es mayor en letras que el nombre2.
+    return comparar_letras
+
+print(nombres("Martin", "Jose"))
+
+
+
 
 
 
