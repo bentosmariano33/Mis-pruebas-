@@ -34,7 +34,14 @@ base = int(4)
 exponente = int(3)
 print(potencia(base,exponente))
     
+# 5. Cree una función que reciba un string como parámetro, y retorne el mismo string, 
+# pero con todas las letras convertidas a mayúsculas.
 
+def texto(nombre):
+    nombre_in = nombre.upper()
+    return nombre_in
+
+print(texto("mariano"))
 
 
 
