@@ -36,12 +36,15 @@ print(potencia(base,exponente))
     
 # 5. Cree una función que reciba un string como parámetro, y retorne el mismo string, 
 # pero con todas las letras convertidas a mayúsculas.
+# 6. Modifique la función del ejercicio anterior para que retorne dos versiones del 
+# string recibido como parámetro: primero la versión en minúsculas, y luego la versión en mayúsculas.
 
 def texto(nombre):
-    nombre_in = nombre.upper()
-    return nombre_in
+    nombre_min = nombre.lower() #muestra el nombre en minuscula.
+    nombre_max = nombre.upper() #muestra el nombre en mayuscula.
+    return nombre_min, nombre_max
 
-print(texto("mariano"))
+print(texto("Emiliano"))
 
 
 
