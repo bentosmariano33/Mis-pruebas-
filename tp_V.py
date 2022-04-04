@@ -17,11 +17,26 @@ print(suma(num1,num2)) #con esta función se muestra el resultado en pantalla lu
 # y luego muestre en pantalla cuántas letras tiene ese nombre.
 
 def palabra(p):
+    """
+    INPUT: p (string)
+    OUTPUT: cont_letras (int)
+    La variable cont_letras es la cantidad de letras.
+    """
     cont_letras = len(p) #cuenta las letras de la palabra colocada como p
     return cont_letras
 
-tu_nombre = input("Dime tu nombre: ")
-print(palabra(tu_nombre))
+nombre_usuario = input("Ingrese su nombre: ")
+print(palabra(nombre_usuario))
+
+#Test de la función creada
+def testpalabra():
+    print("Testeando función palabra()...")
+    assert palabra("Hola") == 4
+    assert palabra("") == 0
+    assert palabra("Hola mundo!") == 11
+    print("Pasó!")
+
+testpalabra()
 
 # 4. Cree una función que reciba dos números como parámetro (base y exponente), 
 # y retorne el resultado de elevar base a la potencia exponente. 
