@@ -32,7 +32,7 @@ def menor_a_100(a,b):
     INPUT: a, b (int)
     OUTPUT: "Ambos valores son menores que 100"
     """
-    if a < 100 and a < 100:
+    if a < 100 and b < 100:
         menores = "Ambos valores son menores que 100"
         return menores
     elif a or b > 100:
@@ -40,3 +40,4 @@ def menor_a_100(a,b):
         return mayor_a_100
 
 print(menor_a_100(num1,num2))
+    
