@@ -15,29 +15,25 @@ else:
 def mayor_a_50(a,b):
     """
     INPUT: a, b (int)
-    OUTPUT: "Al menos uno de los valores es mayor a 50." (string)
-    "mayor" es la variable para el output.
+    OUTPUT: None
+    Muestra por pantalla si a o b es mayor a 50
     """
-    if a or b > 50:
-        mayor = "Al menos uno de los números es mayor a 50."
-        return mayor
+    if a > 50 or b > 50:
+        print("Al menos uno de los números es mayor a 50.")
 
-print(mayor_a_50(num1,num2))
+mayor_a_50(num1,num2)
 
-#Agregue una función que reciba dos enteros como parámetro, 
+    #Agregue una función que reciba dos enteros como parámetro, 
 #e informe (mostrando en pantalla) si ambos valores son menores que 100.
 
 def menor_a_100(a,b):
     """
     INPUT: a, b (int)
-    OUTPUT: "Ambos valores son menores que 100"
+    OUTPUT: None
+    "Ambos valores son menores que 100"
     """
     if a < 100 and b < 100:
-        menores = "Ambos valores son menores que 100"
-        return menores
-    elif a or b > 100:
-        mayor_a_100 = "Al menos un valor es mayor a 100"
-        return mayor_a_100
+        print("Ambos valores son menores que 100")
 
-print(menor_a_100(num1,num2))
+menor_a_100(num1,num2)
     

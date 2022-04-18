@@ -10,19 +10,14 @@
 
 from tarfile import REGULAR_TYPES
 
+# num1 = int(input("Ingresa un número: "))
+#     if (a > 10):
+#         print("Tu número "+str(num1)+" es mayor que 10!")
+#     else: 
+#         print("Tu número "+str(num1)+" es menor o igual que 10!")
 
-def mayor(a):
-    if (a > 10):
-        print("Tu número "+str(a)+" es mayor que 10!")
-    else: 
-        print("Tu número "+str(a)+" es menor o igual que 10!")
+#     print("Saludos!")
 
-    print("Saludos!")
-
-
-num1 = int(input("Ingresa un número: "))
-
-mayor(num1)
 
 
 # 3. Cree un script que le solicite al usuario ingresar dos números por teclado, y
@@ -143,16 +138,17 @@ triangulos(lado1,lado2,lado3)
 # mensaje “No se puede dividir por 0!” en lugar de intentar mostrar el
 # resultado.
 
-def division(div1,div2):
-    if (div2 != 0):
-        print(div1//div2)
-    elif (div2==0):
+dividendo = int(input("Ingrese su dividendo: "))
+divisor = int(input("Ingrese su divisor: "))
+
+def division(numer,denom):
+    if (denom != 0):
+        print(numer/denom)
+    elif (denom == 0):
         print("No se puede dividir por 0!")
 
-divisor = int(input("Ingrese su divisor: "))
-dividendo = int(input("Ingrese su dividendo: "))
 
-division(divisor,dividendo)
+division(dividendo,divisor)
 
 # 9. Python ofrece algunas funciones built-in para facilitar la implementación de,
 # validaciones. A continuación se listan algunas de las más comunes:
