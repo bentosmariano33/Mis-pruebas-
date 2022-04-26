@@ -27,7 +27,7 @@ print(sumar_num(1, 3))
 
 # 5. Cree un script que le solicite al usuario ingresar 10 números enteros, y por cada uno, informarle si el mismo es positivo, negativo, o cero.
 
-cantidad_de_num = 10
+cantidad_de_num = 1
 
 for valor_num in range(cantidad_de_num):
     numero = int(input("Ingrese un número: "))
@@ -37,6 +37,40 @@ for valor_num in range(cantidad_de_num):
         print("Cero")
     else:
         print("Negativo")
+
+# 6. Cree un script que le solicite al usuario ingresar 10 números, y una vez
+# ingresados, le muestre en pantalla cuál es el máximo, y en qué posición lo
+# ingresó. Por ejemplo, si el usuario ingresa los números 2, 63, -3, 20, 55, 89, 7, 32, 9,
+# y 33, se le debería mostrar el mensaje “El mayor número ingresado es 89, y lo
+# ingresaste en la posición 6”. NOTA: las posiciones posibles comienzan desde 1.
+
+num_usuario = 4
+num_mayor = 0
+num_menor = 0
+
+for number in range(1, num_usuario + 1):
+    num = int(input("Ingrese un número: "))
+    if num > num_mayor:
+        num_mayor = num
+        posicion_num_mayor = number
+
+print("El mayor número ingresado es ", num_mayor, "y lo ingresaste en la posición ", posicion_num_mayor)
+
+# 7. Extienda el script del ejercicio anterior para que también informe el número
+# mínimo ingresado, y su posición.
+
+for number in range(1, num_usuario + 1):
+    num = int(input("Ingrese un número: "))
+    if num > num_mayor:
+        num_mayor = num
+        posicion_num_mayor = number
+    elif num > num_menor:
+        num_menor = num
+        posición_num_menor = number
+
+print("El mayor número ingresado es ", num_mayor, "y lo ingresaste en la posición ", posicion_num_mayor)
+print("El número mínimo ingresado es ", num_menor, "y su posición es ", posición_num_menor)
+
 
 
 # 8. Un cliente ha solicitado un programa que le permita ingresar los mililitros de
@@ -51,16 +85,36 @@ for valor_num in range(cantidad_de_num):
 # para el día domingo.
 # Codifique el programa para dar solución a lo solicitado por el cliente.
 
-# mililitros_caidos = 0
-# cantidad_de_dias = 7
-# dia_mas_lluvioso = 0
+mililitros_caidos = 0
+cantidad_de_dias = 7
+dia_mas_lluvioso = 0
 
-# for dia in range(cantidad_de_dias):
-#     lluvia = int(input("Ingrese los mililitros caidos: "))
-#     mililitros_caidos += lluvia
+for dia in range(1, cantidad_de_dias + 1):
+    lluvia = int(input("Ingrese los mililitros caidos: "))
+    mililitros_caidos += lluvia
 
-# promedio_precipitaciones = mililitros_caidos / cantidad_de_dias
-# print("El promedio de precipitaciones fue de ", promedio_precipitaciones, " mls. diarios.")
+    if dia_mas_lluvioso < lluvia:
+        dia_mas_lluvioso = lluvia
+        dia_max_lluvia = dia
+
+if dia_max_lluvia == 1:
+        print("Domingo")
+elif dia_max_lluvia == 2:
+    print("Lunes")
+elif dia_max_lluvia == 3:
+    print("Martes")
+elif dia_max_lluvia == 4:
+    print("Miércoles")
+elif dia_max_lluvia == 5:
+    print("Jueves")
+elif dia_max_lluvia == 6:
+    print("Viernes")
+else:
+    print("Sábado")
+
+promedio_precipitaciones = mililitros_caidos / cantidad_de_dias
+print("El promedio de precipitaciones fue de ", promedio_precipitaciones, " mls. diarios.")
+print("El día de más precipitaciones fue el ", dia_max_lluvia)
 
 
 
