@@ -66,24 +66,24 @@ def muchos_pcn():
 
 # Ciclo con centinela
 
-# def pcn(x):
-#     if x > 0:
-#         resultado = "Número positivo"
-#     elif x == 0:
-#         resultado = "Igual a 0"
-#     else:
-#         resultado = "Número negativo"
-#     return resultado
+def pcn(x):
+    if x > 0:
+        resultado = "Número positivo"
+    elif x == 0:
+        resultado = "Igual a 0"
+    else:
+        resultado = "Número negativo"
+    return resultado
 
-# def leer_centinela():
-#     return input("ingrese un numero (* para terminar): ")
+def leer_centinela():
+    return input("ingrese un numero (* para terminar): ")
 
-# def muchos_pcn():
-#     centinela = leer_centinela()
-#     while centinela != "*":
-#         x = int(centinela)
-#         print(pcn(x))
-#         centinela = leer_centinela()
+def muchos_pcn():
+    centinela = leer_centinela()
+    while centinela != "*":
+        x = int(centinela)
+        print(pcn(x))
+        centinela = leer_centinela()
 
 # muchos_pcn()
 
