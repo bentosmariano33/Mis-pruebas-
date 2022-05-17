@@ -13,13 +13,13 @@
 
 # 3. Cree un script para calcular el resultado de sumar los números desde el 75 al 150.
 
-# def sumar_num(x, y):
-#     total = 0
-#     for j in range(x, y+1):
-#          total += j
-#     return total
+def sumar_num(x, y):
+    total = 0
+    for j in range(x, y+1):
+         total += j
+    return total
 
-# print(sumar_num(75, 150))
+print(sumar_num(1, 99))
 
 # valor_x = 150
 # total_2 = 0

@@ -42,5 +42,27 @@
 
 # while (valor >= 1) and (valor <= 100):
 
-numero = (input("Ingrese un número entre 1 y 100: "))
+# numero = (input("Ingrese un número entre 1 y 100: "))
 
+
+# n = 0
+# sumando = 0
+
+# for i in range(1, n+1, 100):
+#     sumando += i
+# print(sumando)
+
+
+
+# def sumaEspaciadaDel1al100(n):
+#     sumando = 0
+#     for i in range(1, 100+1,n+1):
+#         sumando += i
+#     print(sumando)
+
+# sumaEspaciadaDel1al100(9)
+
+c=30
+for i in range(2,6):
+    c = c-(i*2)
+print("el resultado es:{}".format(c))
