@@ -1,15 +1,15 @@
 # 1. Cree un script para mostrar los primeros 100 números enteros positivos, comenzando desde el 1.
 
-# primeros_enteros = 10
-# for ent_positivos in range(1, primeros_enteros + 1):
-#     print(ent_positivos)
+primeros_enteros = 10
+for ent_positivos in range(1, primeros_enteros + 1):
+    print(ent_positivos)
 
 # # 2. Modifique el script del ejercicio anterior para que se muestren sólo los números pares. Para saber si un número es par, utilice el operador de módulo (%).
 
 
-# for ent_positivos in range(1, primeros_enteros + 1):
-#     if (ent_positivos % 2 == 0): #calcula el módulo del valor
-#         print(ent_positivos)
+for ent_positivos in range(1, primeros_enteros + 1):
+    if (ent_positivos % 2 == 0): #calcula el módulo del valor
+        print(ent_positivos)
 
 # 3. Cree un script para calcular el resultado de sumar los números desde el 75 al 150.
 
@@ -21,24 +21,24 @@ def sumar_num(x, y):
 
 print(sumar_num(1, 99))
 
-# valor_x = 150
-# total_2 = 0
+valor_x = 150
+total_2 = 0
 
-# for i in range(75, valor_x + 1):
-#     total_2 += i
+for i in range(75, valor_x + 1):
+    total_2 += i
 
-# print(total_2)
+print(total_2)
 
 # 4. Cree un script que le solicite al usuario ingresar un número entero, y muestre en pantalla el factorial de dicho número. 
 # NOTA: puede obviar la validación en este ejercicio, pero recuerde que la función range no incluye al valor máximo enviado como parámetro. 
 # factorial de n = n! = 1 * 2 * 3 * … * (n - 1) * n
 
-# numero_usuario = int(input("Ingrese un número: "))
-# factorial = 1
+numero_usuario = int(input("Ingrese un número: "))
+factorial = 1
 
-# for fact in range(numero_usuario):
-#     if numero_usuario > 0:
-#         print(factorial * numero_usuario * (numero_usuario - 1))
+for fact in range(numero_usuario):
+    if numero_usuario > 0:
+        print(factorial * numero_usuario * (numero_usuario - 1))
 
 # 5. Cree un script que le solicite al usuario ingresar 10 números enteros, y por cada uno, informarle si el mismo es positivo, negativo, o cero.
 
@@ -63,11 +63,11 @@ num_usuario = 3
 num_mayor = -999999
 num_menor = 999999
 
-# for number in range(1, num_usuario + 1):
-#     num = int(input("Ingrese un número: "))
-#     if num > num_mayor:
-#         num_mayor = num
-#         posicion_num_mayor = number
+for number in range(1, num_usuario + 1):
+    num = int(input("Ingrese un número: "))
+    if num > num_mayor:
+        num_mayor = num
+        posicion_num_mayor = number
 
 # print("El mayor número ingresado es ", num_mayor, "y lo ingresaste en la posición ", posicion_num_mayor)
 
