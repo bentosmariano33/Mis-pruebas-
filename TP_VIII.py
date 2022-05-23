@@ -26,9 +26,9 @@
 #     if nota == -1:
 #         print("No hay más notas para cargar")
 
-# if cantidad_notas > 0:        
-#     promedio = (suma_notas/cantidad_notas)
-#     print("El promedio de las notas es ",promedio)
+if cantidad_notas > 0:        
+    promedio = (suma_notas/cantidad_notas)
+    print("El promedio de las notas es ",promedio)
 
 # 3. Cree un script que le solicite al usuario leer un número entero entre 1 y 100. El
 # programa debe ser capaz de solicitarle al usuario que reingrese el número
