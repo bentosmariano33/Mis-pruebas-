@@ -66,26 +66,26 @@
 
 # # Ciclo con centinela
 
-# def pcn(x):
-#     if x > 0:
-#         resultado = "Número positivo"
-#     elif x == 0:
-#         resultado = "Igual a 0"
-#     else:
-#         resultado = "Número negativo"
-#     return resultado
+def pcn(x):
+    if x > 0:
+        resultado = "Número positivo"
+    elif x == 0:
+        resultado = "Igual a 0"
+    else:
+        resultado = "Número negativo"
+    return resultado
 
-# def leer_centinela():
-#     return input("ingrese un numero (* para terminar): ")
+def leer_centinela():
+    return input("ingrese un numero (* para terminar): ")
 
-# def muchos_pcn():
-#     centinela = leer_centinela()
-#     while centinela != "*":
-#         x = int(centinela)
-#         print(pcn(x))
-#         centinela = leer_centinela()
+def muchos_pcn():
+    centinela = leer_centinela()
+    while centinela != "*":
+        x = int(centinela)
+        print(pcn(x))
+        centinela = leer_centinela()
 
-# # muchos_pcn()
+muchos_pcn()
 
 # # for i in range(100):
 # #     print(i)
@@ -115,18 +115,18 @@
 #    nota = int(input("Ingrese nota: "))
 #    suma_notas += nota
 
-cantidad_notas = 0
-sumatoria = 0
-numero = int(input("Ingrese un número entero: "))
+# cantidad_notas = 0
+# sumatoria = 0
+# numero = int(input("Ingrese un número entero: "))
 
-while numero != -1:
-    sumatoria += numero
-    multiplicacion = numero * 2
-    cantidad_notas +=1
-    print(multiplicacion)
-    numero = int(input("Ingrese un número entero (si quiere terminar ingrese -1): "))
+# while numero != -1:
+#     sumatoria += numero
+#     multiplicacion = numero * 2
+#     cantidad_notas +=1
+#     print(multiplicacion)
+#     numero = int(input("Ingrese un número entero (si quiere terminar ingrese -1): "))
 
-if cantidad_notas > 0:
-    promedio = sumatoria / cantidad_notas
-    print(promedio)
-print(sumatoria)
+# if cantidad_notas > 0:
+#     promedio = sumatoria / cantidad_notas
+#     print(promedio)
+# print(sumatoria)
